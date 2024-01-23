@@ -7,10 +7,8 @@ import 'package:kw_store_app/core/utils/strategy/base_strategy.dart';
 import 'package:kw_store_app/local/isar_db/isar_db.dart';
 import 'package:kw_store_app/local/local_product_cart/local_product_cart.dart';
 import 'package:kw_store_app/model/cart.dart';
-import 'package:kw_store_app/model/product.dart';
 
 part 'cart_controller_event.dart';
-
 part 'cart_controller_state.dart';
 
 class CartControllerBloc
