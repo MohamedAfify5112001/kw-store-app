@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kw_store_app/core/routes/app_routes.dart';
-import 'package:kw_store_app/core/utils/on_boarding_utils.dart';
+import 'package:kw_store_app/core/utils/on_boarding_utils/on_boarding_utils.dart';
 import 'package:kw_store_app/model/on_boarding_model.dart';
 import 'package:kw_store_app/view/on_boarding/widget/on_boarding_widget.dart';
 
