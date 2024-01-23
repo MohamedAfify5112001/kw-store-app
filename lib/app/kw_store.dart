@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -10,8 +8,6 @@ import 'package:kw_store_app/core/routes/app_routes.dart';
 import 'package:kw_store_app/core/routes/route_manager.dart';
 import 'package:kw_store_app/core/theme/app_theme.dart';
 import 'package:kw_store_app/view/cart/bloc/cart_controller_bloc.dart';
-import 'package:kw_store_app/view/cart/bloc/cart_controller_bloc.dart';
-import 'package:kw_store_app/view/details/bloc/details_controller_bloc.dart';
 import 'package:kw_store_app/view/details/bloc/details_controller_bloc.dart';
 import 'package:kw_store_app/view/favorite/bloc/favorite_controller_bloc.dart';
 import 'package:kw_store_app/view/home/bloc/home_controller_bloc.dart';

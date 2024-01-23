@@ -27,7 +27,6 @@ class _FavoriteScreenState extends State<FavoriteScreen> {
   @override
   void initState() {
     super.initState();
-    log("Hello World");
     _bloc.add(FetchFavoriteProductsEvent());
   }
 
