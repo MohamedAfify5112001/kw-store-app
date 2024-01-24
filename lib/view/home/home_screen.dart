@@ -76,7 +76,11 @@ class _HomeScreenState extends State<HomeScreen> {
               const SizedBox(
                 height: 19.0,
               ),
-              const HomeSearchWidget(),
+              HomeSearchWidget(
+                onTap: () => Navigator.of(context).pushNamed(
+                  AppRoutes.search,
+                ),
+              ),
               const SizedBox(
                 height: 24.0,
               ),

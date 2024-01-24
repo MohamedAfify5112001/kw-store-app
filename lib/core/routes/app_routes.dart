@@ -5,4 +5,5 @@ sealed class AppRoutes {
   static const String layout = '/layout';
   static const String details = '/details';
   static const String cart = '/cart';
+  static const String search = '/search';
 }

@@ -9,4 +9,12 @@ sealed class AppImagePaths {
   static const String search = 'assets/images/ic_search.svg';
   static const String filter = 'assets/images/ic_filter.svg';
   static const String remove = 'assets/images/ic_remove.svg';
+
+  // Companies
+  static const String company1 = 'assets/images/ic_company_1.jpg';
+  static const String company2 = 'assets/images/ic_company_2.jpg';
+  static const String company3 = 'assets/images/ic_company_3.jpg';
+  static const String company4 = 'assets/images/ic_company_4.jpg';
+  static const String company5 = 'assets/images/ic_company_5.jpg';
+  static const String company6 = 'assets/images/ic_company_6.jpg';
 }

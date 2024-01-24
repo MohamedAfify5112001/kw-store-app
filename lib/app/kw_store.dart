@@ -12,6 +12,8 @@ import 'package:kw_store_app/view/details/bloc/details_controller_bloc.dart';
 import 'package:kw_store_app/view/favorite/bloc/favorite_controller_bloc.dart';
 import 'package:kw_store_app/view/home/bloc/home_controller_bloc.dart';
 import 'package:kw_store_app/view/layout/bloc/layout_bloc.dart';
+import 'package:kw_store_app/view/search/bloc/search_controller_bloc.dart';
+import 'package:kw_store_app/view/search/bloc/search_controller_bloc.dart';
 
 class KwStoreApp extends StatelessWidget {
   const KwStoreApp({super.key});
@@ -41,6 +43,9 @@ class KwStoreApp extends StatelessWidget {
           ),
           BlocProvider<CartControllerBloc>(
             create: (context) => AppLocator.locator<CartControllerBloc>(),
+          ),
+          BlocProvider<SearchControllerBloc>(
+            create: (context) => AppLocator.locator<SearchControllerBloc>(),
           ),
         ],
         child: MaterialApp(

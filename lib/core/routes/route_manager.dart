@@ -4,6 +4,7 @@ import 'package:kw_store_app/view/cart/cart_screen.dart';
 import 'package:kw_store_app/view/details/details_screen.dart';
 import 'package:kw_store_app/view/layout/layout_screen.dart';
 import 'package:kw_store_app/view/on_boarding/on_boarding_screen.dart';
+import 'package:kw_store_app/view/search/search_screen.dart';
 import 'package:kw_store_app/view/splash/splash_screen.dart';
 import 'package:page_transition/page_transition.dart';
 
@@ -33,6 +34,11 @@ sealed class AppRouteManager {
       case AppRoutes.cart:
         return _pageTransitionForScreen(
           screen: const CartScreen(),
+          settings: settings,
+        );
+      case AppRoutes.search:
+        return _pageTransitionForScreen(
+          screen: const SearchScreen(),
           settings: settings,
         );
       default:

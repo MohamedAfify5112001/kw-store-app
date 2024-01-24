@@ -4,8 +4,11 @@ import 'package:kw_store_app/core/color/app_color.dart';
 import 'package:kw_store_app/core/paths/app_image_paths.dart';
 
 class HomeSearchWidget extends StatelessWidget {
+  final void Function() onTap;
+
   const HomeSearchWidget({
     super.key,
+    required this.onTap,
   });
 
   @override
@@ -13,30 +16,33 @@ class HomeSearchWidget extends StatelessWidget {
     return Row(
       children: <Widget>[
         Expanded(
-          child: Container(
-            decoration: BoxDecoration(
-              color: AppColorScheme.greySearch,
-              borderRadius: BorderRadiusDirectional.circular(8.0),
-            ),
-            padding: const EdgeInsetsDirectional.symmetric(
-              vertical: 10.0,
-              horizontal: 20.0,
-            ),
-            child: Row(
-              children: [
-                SvgPicture.asset(
-                  AppImagePaths.search,
-                ),
-                const SizedBox(
-                  width: 8.0,
-                ),
-                Text(
-                  'بحث',
-                  style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                      fontSize: 14.0,
-                      color: AppColorScheme.blackWithAlphaSecond),
-                ),
-              ],
+          child: GestureDetector(
+            onTap: onTap,
+            child: Container(
+              decoration: BoxDecoration(
+                color: AppColorScheme.greySearch,
+                borderRadius: BorderRadiusDirectional.circular(8.0),
+              ),
+              padding: const EdgeInsetsDirectional.symmetric(
+                vertical: 10.0,
+                horizontal: 20.0,
+              ),
+              child: Row(
+                children: [
+                  SvgPicture.asset(
+                    AppImagePaths.search,
+                  ),
+                  const SizedBox(
+                    width: 8.0,
+                  ),
+                  Text(
+                    'بحث',
+                    style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                        fontSize: 14.0,
+                        color: AppColorScheme.blackWithAlphaSecond),
+                  ),
+                ],
+              ),
             ),
           ),
         ),

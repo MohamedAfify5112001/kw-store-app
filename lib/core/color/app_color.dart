@@ -13,4 +13,5 @@ sealed class AppColorScheme {
   static const Color greyCategory = Color.fromRGBO(167, 171, 181, 1);
   static const Color bgCategoryItem = Color.fromRGBO(248, 248, 248, 1);
   static const Color addFavColorBg = Color.fromRGBO(245, 245, 247, 1);
+  static const Color companyNameColor = Color.fromRGBO(224, 224, 224, 1);
 }
