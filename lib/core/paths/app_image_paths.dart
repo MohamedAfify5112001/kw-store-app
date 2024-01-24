@@ -17,4 +17,10 @@ sealed class AppImagePaths {
   static const String company4 = 'assets/images/ic_company_4.jpg';
   static const String company5 = 'assets/images/ic_company_5.jpg';
   static const String company6 = 'assets/images/ic_company_6.jpg';
+
+  static const String facebook = 'assets/images/ic_facebook.svg';
+  static const String instagram = 'assets/images/ic_instagram.svg';
+  static const String pinterest = 'assets/images/ic_pinterest.svg';
+  static const String twitter = 'assets/images/ic_twitter.svg';
+  static const String whatsapp = 'assets/images/ic_whatsapp.svg';
 }
